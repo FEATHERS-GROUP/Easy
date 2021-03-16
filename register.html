@@ -1,0 +1,135 @@
+
+<!doctype html>
+<html lang="zxx">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Create Account Easy</title>
+  <!-- Template CSS -->
+  
+  <link rel="stylesheet" href="assets/css/style-starter.css">
+  <!-- Template CSS -->
+  <link href="//fonts.googleapis.com/css?family=Hind:400,500,600,700&display=swap" rel="stylesheet">
+  <!-- Template CSS -->
+
+</head>
+
+<body>
+  <!--/top-header-content-->
+  <div class="template">
+    <header id="site-header" class="fixed-top">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-dark stroke">
+          <a class="navbar-brand" href="index.html">
+            <span class="fa fa-lightbulb-o"></span> Easy
+          </a>
+        </nav>
+      </div>
+    </header>
+  </div>
+  <!--//top-header-content-->
+
+  <section class="w3l-inner-page-main">
+    <div class="breadcrumb-infhny">
+      <div class="container">
+        <nav aria-label="breadcrumb">
+          <h2 class="hny-title text-center">Register</h2>
+          <ol class="breadcrumb mb-0">
+            <li><a href="index.html">Home</a>
+              <span class="fa fa-angle-double-right"></span></li>
+            <li class="active">Register</li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- /contact-form -->
+  <section class="w3l-contact-main">
+    <div class="contact-infhny py-5">
+      <div class="container py-lg-3">
+        <div class="top-map">
+          <div class="map-content-9">
+            <form action="dashboard/index.html" method="post">
+              <div class="form-top1">
+                <h3 class="hny-title text-center mb-lg-5 mb-4" data-aos="fade-down">Create Free Account</h3>
+                <div class="form-top">
+                    <div class="form-top-righ" data-aos="fade-up">
+                        <input type="text" name="w3lName" id="w3lName" placeholder="Names*" required="">
+                      </div>
+                  <div class="form-top-left" data-aos="fade-up">
+                    <input type="text" name="gender" id="w3lSender" placeholder="gender" required="">
+                    <input type="text" name="province" id="w3lSender" placeholder="Province*" required="">
+                    <input type="text" name="district" id="w3lName" placeholder="District*" required="">
+
+                  </div>
+                  <div class="form-top-left" data-aos="fade-up">
+                    <input type="text" name="what you do" id="w3lSender" placeholder="What you do" required="">
+
+                    <input type="text" name="sector" id="w3lSender" placeholder="Telphone*" required="">
+
+                    <input type="email" name="email" id="w3lName" placeholder="Email" required="">
+                  </div>
+                </div>
+                <div class="text-center">
+                  <button name="create" type="submit">Create Now</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+  <!-- //contact-form -->
+</body>
+
+</html>
+<script src="assets/js/jquery-3.3.1.min.js"></script>
+<!-- disable body scroll which navbar is in active -->
+<script>
+  $(function () {
+    $('.navbar-toggler').click(function () {
+      $('body').toggleClass('noscroll');
+    })
+  });
+</script>
+<!--/MENU-JS-->
+<script>
+  $(window).on("scroll", function () {
+    var scroll = $(window).scrollTop();
+
+    if (scroll >= 80) {
+      $("#site-header").addClass("nav-fixed");
+    } else {
+      $("#site-header").removeClass("nav-fixed");
+    }
+  });
+
+  //Main navigation Active Class Add Remove
+  $(".navbar-toggler").on("click", function () {
+    $("header").toggleClass("active");
+  });
+  $(document).on("ready", function () {
+    if ($(window).width() > 991) {
+      $("header").removeClass("active");
+    }
+    $(window).on("resize", function () {
+      if ($(window).width() > 991) {
+        $("header").removeClass("active");
+      }
+    });
+  });
+</script>
+<!--//MENU-JS-->
+<!-- /aos -->
+<script src="assets/js/aos.js"></script>
+<script src="assets/js/aosindex.js"></script>
+<!-- //aos -->
+<!-- disable body scroll which navbar is in active -->
+<!-- //jQuery-Photo-filter-lightbox-portfolio-plugin -->
+<script src="assets/js/bootstrap.min.js"></script>
